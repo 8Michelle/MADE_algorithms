@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/michelle/Desktop/CLionProjects/MADE_algorithms/2_sort/D.cpp
+iostream
+-
+string
+-
+vector
+-
+
