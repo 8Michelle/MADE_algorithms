@@ -5,18 +5,19 @@
 int64_t merge(std::vector<int>& array, int left, int medium, int right) {
     int i = 0;
     int j = 0;
-    int64_t counter = 0;
-    int64_t proxy_counter = 0;
+    int64_t counter = 0; // для суммарного учета
+    int64_t proxy_counter = 0; // для учета элементов, перенесенных справа
     std::vector<int> buff(right - left);
     while (left + i < medium && medium + j < right) {
         if (array[left + i] <= array[medium + j]) {
             buff[i + j] = array[left + i];
             counter += (proxy_counter * (medium - left - i));
+            // "количество элементов перенесенных справа" * "количество инвертированных с ними элементов слева"
             proxy_counter = 0;
             ++i;
         } else {
             buff[i + j] = array[medium + j];
-            ++proxy_counter;
+            ++proxy_counter; // инкрементируем количество перенесенных справа элементов
             ++j;
         }
     }
