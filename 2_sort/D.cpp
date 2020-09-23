@@ -14,7 +14,7 @@ bool isAnagramOrLess(const std::vector<int>& cnt_str,
 
 int64_t countPermutations(const std::string& str, const std::string& tbl) {
     /* не пересчитываем couning вектор для строки каждый раз, а
-     * инкрементируем и деинкрементируем элементы при сдвиге окна*/
+     * инкрементируем и декрементируем элементы при сдвиге окна */
     int base = 26;
     std::vector<int> cnt_tbl(base);
     for (auto item : tbl) {
@@ -29,7 +29,7 @@ int64_t countPermutations(const std::string& str, const std::string& tbl) {
         if (isAnagramOrLess(cnt_str, cnt_tbl)) {
             counter += (right - left);
             if (right == str.size()) { // если уперлись в правый край, выходим
-                // так как все элементы слева от left уже поссчитаны, а сейчас поссчитали в окне
+                // так как все подстроки слева от left уже учтены, а сейчас посчитали подстроки в окне
                 break;
             }
             ++cnt_str[str[right++] - 'a']; // если не уперлись, расширяем окно
