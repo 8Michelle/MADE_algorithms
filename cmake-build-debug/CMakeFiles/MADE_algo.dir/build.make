@@ -77,27 +77,27 @@ include CMakeFiles/MADE_algo.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/MADE_algo.dir/flags.make
 
-CMakeFiles/MADE_algo.dir/2_sort/D.cpp.o: CMakeFiles/MADE_algo.dir/flags.make
-CMakeFiles/MADE_algo.dir/2_sort/D.cpp.o: ../2_sort/D.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michelle/Desktop/CLionProjects/MADE_algorithms/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MADE_algo.dir/2_sort/D.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MADE_algo.dir/2_sort/D.cpp.o -c /Users/michelle/Desktop/CLionProjects/MADE_algorithms/2_sort/D.cpp
+CMakeFiles/MADE_algo.dir/3_search/B.cpp.o: CMakeFiles/MADE_algo.dir/flags.make
+CMakeFiles/MADE_algo.dir/3_search/B.cpp.o: ../3_search/B.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michelle/Desktop/CLionProjects/MADE_algorithms/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MADE_algo.dir/3_search/B.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MADE_algo.dir/3_search/B.cpp.o -c /Users/michelle/Desktop/CLionProjects/MADE_algorithms/3_search/B.cpp
 
-CMakeFiles/MADE_algo.dir/2_sort/D.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MADE_algo.dir/2_sort/D.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michelle/Desktop/CLionProjects/MADE_algorithms/2_sort/D.cpp > CMakeFiles/MADE_algo.dir/2_sort/D.cpp.i
+CMakeFiles/MADE_algo.dir/3_search/B.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MADE_algo.dir/3_search/B.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/michelle/Desktop/CLionProjects/MADE_algorithms/3_search/B.cpp > CMakeFiles/MADE_algo.dir/3_search/B.cpp.i
 
-CMakeFiles/MADE_algo.dir/2_sort/D.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MADE_algo.dir/2_sort/D.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michelle/Desktop/CLionProjects/MADE_algorithms/2_sort/D.cpp -o CMakeFiles/MADE_algo.dir/2_sort/D.cpp.s
+CMakeFiles/MADE_algo.dir/3_search/B.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MADE_algo.dir/3_search/B.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/michelle/Desktop/CLionProjects/MADE_algorithms/3_search/B.cpp -o CMakeFiles/MADE_algo.dir/3_search/B.cpp.s
 
 # Object files for target MADE_algo
 MADE_algo_OBJECTS = \
-"CMakeFiles/MADE_algo.dir/2_sort/D.cpp.o"
+"CMakeFiles/MADE_algo.dir/3_search/B.cpp.o"
 
 # External object files for target MADE_algo
 MADE_algo_EXTERNAL_OBJECTS =
 
-MADE_algo: CMakeFiles/MADE_algo.dir/2_sort/D.cpp.o
+MADE_algo: CMakeFiles/MADE_algo.dir/3_search/B.cpp.o
 MADE_algo: CMakeFiles/MADE_algo.dir/build.make
 MADE_algo: CMakeFiles/MADE_algo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michelle/Desktop/CLionProjects/MADE_algorithms/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MADE_algo"

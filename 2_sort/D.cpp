@@ -15,12 +15,12 @@ bool isAnagramOrLess(const std::vector<int>& cnt_str,
 int64_t countPermutations(const std::string& str, const std::string& tbl) {
     /* не пересчитываем couning вектор для строки каждый раз, а
      * инкрементируем и декрементируем элементы при сдвиге окна */
-    int base = 26;
-    std::vector<int> cnt_tbl(base);
+    int BASE = 26;
+    std::vector<int> cnt_tbl(BASE);
     for (auto item : tbl) {
         ++cnt_tbl[item - 'a'];
     }
-    std::vector<int> cnt_str(base);
+    std::vector<int> cnt_str(BASE);
     size_t left = 0;
     size_t right = 0;
     ++cnt_str[str[right++] - 'a']; // создаем окно с первой буквой

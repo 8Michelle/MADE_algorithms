@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/MADE_algo.dir/2_sort/D.cpp.o"
+  "CMakeFiles/MADE_algo.dir/3_search/B.cpp.o"
   "MADE_algo"
   "MADE_algo.pdb"
 )

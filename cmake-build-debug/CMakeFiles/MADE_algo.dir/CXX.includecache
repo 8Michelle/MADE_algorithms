@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/michelle/Desktop/CLionProjects/MADE_algorithms/2_sort/D.cpp
+/Users/michelle/Desktop/CLionProjects/MADE_algorithms/3_search/B.cpp
 iostream
 -
-string
--
 vector
+-
+algorithm
 -
 

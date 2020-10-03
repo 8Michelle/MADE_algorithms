@@ -143,32 +143,32 @@ MADE_algo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MADE_algo.dir/build.make CMakeFiles/MADE_algo.dir/build
 .PHONY : MADE_algo/fast
 
-2_sort/D.o: 2_sort/D.cpp.o
+3_search/B.o: 3_search/B.cpp.o
 
-.PHONY : 2_sort/D.o
+.PHONY : 3_search/B.o
 
 # target to build an object file
-2_sort/D.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MADE_algo.dir/build.make CMakeFiles/MADE_algo.dir/2_sort/D.cpp.o
-.PHONY : 2_sort/D.cpp.o
+3_search/B.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MADE_algo.dir/build.make CMakeFiles/MADE_algo.dir/3_search/B.cpp.o
+.PHONY : 3_search/B.cpp.o
 
-2_sort/D.i: 2_sort/D.cpp.i
+3_search/B.i: 3_search/B.cpp.i
 
-.PHONY : 2_sort/D.i
+.PHONY : 3_search/B.i
 
 # target to preprocess a source file
-2_sort/D.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MADE_algo.dir/build.make CMakeFiles/MADE_algo.dir/2_sort/D.cpp.i
-.PHONY : 2_sort/D.cpp.i
+3_search/B.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MADE_algo.dir/build.make CMakeFiles/MADE_algo.dir/3_search/B.cpp.i
+.PHONY : 3_search/B.cpp.i
 
-2_sort/D.s: 2_sort/D.cpp.s
+3_search/B.s: 3_search/B.cpp.s
 
-.PHONY : 2_sort/D.s
+.PHONY : 3_search/B.s
 
 # target to generate assembly for a file
-2_sort/D.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MADE_algo.dir/build.make CMakeFiles/MADE_algo.dir/2_sort/D.cpp.s
-.PHONY : 2_sort/D.cpp.s
+3_search/B.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MADE_algo.dir/build.make CMakeFiles/MADE_algo.dir/3_search/B.cpp.s
+.PHONY : 3_search/B.cpp.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MADE_algo"
-	@echo "... 2_sort/D.o"
-	@echo "... 2_sort/D.i"
-	@echo "... 2_sort/D.s"
+	@echo "... 3_search/B.o"
+	@echo "... 3_search/B.i"
+	@echo "... 3_search/B.s"
 .PHONY : help
 
 

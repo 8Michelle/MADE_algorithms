@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/michelle/Desktop/CLionProjects/MADE_algorithms/2_sort/D.cpp">
+		<Unit filename="/Users/michelle/Desktop/CLionProjects/MADE_algorithms/3_search/B.cpp">
 			<Option target="MADE_algo"/>
 		</Unit>
 		<Unit filename="/Users/michelle/Desktop/CLionProjects/MADE_algorithms/CMakeLists.txt">

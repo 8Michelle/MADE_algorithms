@@ -4,15 +4,15 @@
 #include <algorithm>
 
 void stableCountingTupleSort(std::vector<std::string>& array, int digit) {
-    int base = 26;
-    std::vector<int> cnt(base);
+    int BASE = 26;
+    std::vector<int> cnt(BASE);
     std::vector<std::string> result(array.size());
-    std::vector<int> p(base);
+    std::vector<int> p(BASE);
     for (auto item : array) {
         ++cnt[item[digit] - 'a'];
     }
     p[0] = 0;
-    for (int i = 1; i < base; ++i) {
+    for (int i = 1; i < BASE; ++i) {
         p[i] = p[i - 1] + cnt[i - 1];
     }
     for (auto item : array) {

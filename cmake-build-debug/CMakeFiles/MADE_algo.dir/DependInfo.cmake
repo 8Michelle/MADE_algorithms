@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/michelle/Desktop/CLionProjects/MADE_algorithms/2_sort/D.cpp" "/Users/michelle/Desktop/CLionProjects/MADE_algorithms/cmake-build-debug/CMakeFiles/MADE_algo.dir/2_sort/D.cpp.o"
+  "/Users/michelle/Desktop/CLionProjects/MADE_algorithms/3_search/B.cpp" "/Users/michelle/Desktop/CLionProjects/MADE_algorithms/cmake-build-debug/CMakeFiles/MADE_algo.dir/3_search/B.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
