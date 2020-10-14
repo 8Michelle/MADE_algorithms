@@ -1,89 +1,14 @@
-#include <random>
 #include <iostream>
 #include <vector>
 #include <string>
 #include <memory>
 
 
-class List {
- public:
-    ~List();
-
-    void put(const std::string& key, const std::string& value);
-    void erase(const std::string& key);
-    std::string get(const std::string &key);
-
- private:
-    struct Node {
-        std::string key;
-        std::string value;
-
-        std::unique_ptr<Node> next;
-    };
-
-    std::unique_ptr<Node> head_;
-};
-
-List::~List() {
-    while (head_) {
-        erase(head_->key);
-    }
-}
-
-void List::put(const std::string& key, const std::string& value) {
-    auto node = head_.get();
-
-    while (node != nullptr) {
-        if (node->key == key) {
-            node->value = value;
-            return;
-        }
-    }
-
-    node = new Node({key, value});
-    node->next = std::move(head_);
-    head_ = std::unique_ptr<Node>(node);
-}
-
-void List::erase(const std::string& key) {
-    if (head_) {
-        if (head_->next != nullptr) {
-            auto node = head_.get();
-            while (node->next != nullptr) {
-
-                if (node->next->key == key) {
-                    node->next = std::move(node->next->next);
-                    return;
-                }
-
-                node = node->next.get();
-            }
-        } else if (head_->key == key) {
-            head_ = nullptr;
-        }
-    }
-
-}
-
-std::string List::get(const std::string& key) {
-    auto node = head_.get();
-    while (node != nullptr) {
-
-        if (node->key == key) {
-            return node->value;
-        }
-
-        node = node->next.get();
-    }
-    return "none";
-}
-
-
 class Map {
  public:
     Map(const size_t map_size) : map_size_(map_size),
     body_(std::vector<Node>(map_size)),
-    P(2147483423), A(29) {};
+    P(2147483423), A(29) {}
 
     void put(const std::string& key, const std::string& value);
     void erase(const std::string& key);
@@ -141,13 +66,14 @@ void Map::erase(const std::string& key) {
         }
 
     } else {
-        Node* last_node = &body_[index];
+        Node* prev_node = &body_[index];
         Node* node = body_[index].next.get();
         while (node != nullptr) {
             if (node->key == key) {
-                last_node->next = std::move(node->next);
+                prev_node->next = std::move(node->next);
+                return;
             }
-            last_node = node;
+            prev_node = node;
             node = node->next.get();
         }
     }
@@ -174,30 +100,7 @@ size_t Map::get_hash(const std::string& key) {
 }
 
 
-//std::string random_string() {
-//    std::string str("abcdefghijklmnopqrstuvwxyz");
-//
-//    std::random_device rd;
-//    std::mt19937 generator(rd());
-//
-//    std::shuffle(str.begin(), str.end(), generator);
-//
-//    return str.substr(0, 20);    // assumes 32 < number of characters in str
-//}
-//
-//
-//int main() {
-//    Map map(100000);
-//    for (int i = 0; i < 100000; ++i) {
-//        map.put(random_string(), random_string());
-//        std::cout << i << '\n';
-//    }
-//    std::cout << "OK.\n";
-//}
-
-
 int main() {
-
     const size_t MAP_SIZE = 1e5;
     std::string command;
     std::string key;
